@@ -3,32 +3,25 @@ package Two;
 public class Nilai {
     String Nim;
     String Nama;
-    double NilaiAbsen;
-    int NilaiTugas;
-    int NilaiUts;
-    int NilaiUas;
-    int NilaiAkhir;
+    float NilaiAbsen;
+    float NilaiTugas;
+    float NilaiUts;
+    float NilaiUas;
+    float NilaiAkhir;
 
-    void Nilai(String Nim, String Nama, int NilaiAbsen, int NilaiTugas, int NilaiUts, int NilaiUas, int NilaiAkhir ) {
-        this.Nim = Nim;
-        this.Nama = Nama;
-        this.NilaiAbsen = NilaiAbsen;
-        this.NilaiTugas = NilaiTugas;
-        this.NilaiUts = NilaiUts;
-        this.NilaiUas = NilaiUas;
-        this.NilaiAkhir = NilaiAkhir;
+    float Nilai() {
+        NilaiAkhir = (int) (0.1 * NilaiAbsen + 0.2 * NilaiTugas + 0.3 * NilaiUts + 0.4 * NilaiUas);
+        return NilaiAkhir;
     }
-
-    void CetakNilai (){
-        System.out.println("NIM: " + " " + Nim);
-        System.out.println("Nama: " + " " + Nama);
-        System.out.println("NilaiAbsen[10%]: " + " " + NilaiAbsen);
-        System.out.println("NilaiTugas[20%]: " + " " + NilaiTugas);
-        System.out.println("NilaiUts[30%]: " + " " + NilaiUts);
-        System.out.println("NilaiUas[40%]: " + " " + NilaiUas);
-        System.out.println("NilaiAkhir: " + " " + NilaiAkhir);
+    void CetakNilai() {
+        Nilai();
+        System.out.println("NIM: " +  " " + Nim);
+        System.out.println("Nama: " +  " " + Nama);
+        System.out.println("Nilai Absen [10%]: " + " " + NilaiAbsen);
+        System.out.println("Nilai Tugas [20%]: " + " " + NilaiTugas);
+        System.out.println("Nilai UTS [30%]: " +  " " + NilaiUts);
+        System.out.println("Nilai UAS [40%]: " + " " + NilaiUas);
+        System.out.println("Nilai Akhir: " + " " + NilaiAkhir );
     }
-
-
 
 }
