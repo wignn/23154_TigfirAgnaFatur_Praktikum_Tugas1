@@ -9,6 +9,7 @@ public class DemoNilai {
         nilai1.NilaiTugas = 100;
         nilai1.NilaiUts = 10;
         nilai1.NilaiUas = 10;
+        nilai1.Nilai();
         nilai1.CetakNilai();
     }
 }

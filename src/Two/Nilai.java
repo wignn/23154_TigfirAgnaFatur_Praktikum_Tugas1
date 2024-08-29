@@ -10,11 +10,10 @@ public class Nilai {
     float NilaiAkhir;
 
     float Nilai() {
-        NilaiAkhir = (int) (0.1 * NilaiAbsen + 0.2 * NilaiTugas + 0.3 * NilaiUts + 0.4 * NilaiUas);
+        NilaiAkhir = (float) (0.1 * NilaiAbsen + 0.2 * NilaiTugas + 0.3 * NilaiUts + 0.4 * NilaiUas);
         return NilaiAkhir;
     }
     void CetakNilai() {
-        Nilai();
         System.out.println("NIM: " +  " " + Nim);
         System.out.println("Nama: " +  " " + Nama);
         System.out.println("Nilai Absen [10%]: " + " " + NilaiAbsen);
